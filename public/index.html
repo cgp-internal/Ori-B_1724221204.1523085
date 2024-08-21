@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module">
+        import { NotesContext, NotesProvider } from '../src/context/NotesContext.js';
+        import App from '../src/App.js';
+        import Notes from '../src/routes/Notes.js';
+        import Note from '../src/components/Note.js';
+        import NoteForm from '../src/components/NoteForm.js';
+        
+        NotesProvider(App);
+    </script>
+</body>
+</html>
