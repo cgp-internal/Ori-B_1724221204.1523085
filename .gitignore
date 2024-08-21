@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/#explicit-repository-excludes
+
+# Node modules
+node_modules/
+
+# Cache files
+.cache
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+
+# IDE files
+.vscode/
+
+# yarn error files
+yarn-error.log*
+
+# dependencies files
+src/context/NotesContext.js
+src/data/notes.js
+src/routes/Notes.js
+src/components/Note.js
+src/components/NoteForm.js
