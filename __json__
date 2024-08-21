@@ -1,0 +1,91 @@
+{
+    "README.md": {
+        "description": "README with basic documentation and 'how to run' guide"
+    },
+    ".gitignore": {
+        "description": ".gitignore with node-modules and cache files"
+    },
+    "package.json": {
+        "description": "Package dependencies and scripts"
+    },
+    "public/index.html": {
+        "description": "Main HTML entry point"
+    },
+    "src/index.js": {
+        "description": "Main JavaScript entry point",
+        "dependencies": {
+            "src/App.js": [
+                "App"
+            ]
+        },
+        "exposes": []
+    },
+    "src/App.js": {
+        "description": "Main application component",
+        "dependencies": {
+            "src/context/NotesContext.js": [
+                "NotesContext"
+            ],
+            "src/routes/Notes.js": [
+                "Notes"
+            ]
+        },
+        "exposes": [
+            "App"
+        ]
+    },
+    "src/context/NotesContext.js": {
+        "description": "Notes context using React Context API",
+        "dependencies": {
+            "src/data/notes.js": [
+                "notes"
+            ]
+        },
+        "exposes": [
+            "NotesContext",
+            "NotesProvider"
+        ]
+    },
+    "src/data/notes.js": {
+        "description": "Hard-coded notes data",
+        "exposes": [
+            "notes"
+        ]
+    },
+    "src/routes/Notes.js": {
+        "description": "Notes route component",
+        "dependencies": {
+            "src/components/Note.js": [
+                "Note"
+            ],
+            "src/components/NoteForm.js": [
+                "NoteForm"
+            ]
+        },
+        "exposes": [
+            "Notes"
+        ]
+    },
+    "src/components/Note.js": {
+        "description": "Single note component",
+        "dependencies": {
+            "src/context/NotesContext.js": [
+                "NotesContext"
+            ]
+        },
+        "exposes": [
+            "Note"
+        ]
+    },
+    "src/components/NoteForm.js": {
+        "description": "Note form component",
+        "dependencies": {
+            "src/context/NotesContext.js": [
+                "NotesContext"
+            ]
+        },
+        "exposes": [
+            "NoteForm"
+        ]
+    }
+}
